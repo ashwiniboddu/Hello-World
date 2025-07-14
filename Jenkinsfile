@@ -23,9 +23,9 @@ pipeline {
         }
         stage ('Deploy Artifact to Tomcat') {
             steps {
-                sh '''
+                sh """
                 cp ${WAR_PATH} ${TOMCAT_WEBAPPS}/hello-wold.war
-                '''
+                """
             }
         }
     }
