@@ -18,7 +18,7 @@ pipeline {
         }
         stage ('Maven Build') {
             steps {
-                sh "mvn clean compile package"
+                sh "mvn clean package"
             }
         }
         stage ('Deploy Artifact to Tomcat') {
