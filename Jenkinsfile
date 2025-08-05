@@ -24,7 +24,7 @@ pipeline {
         stage ('Deploy Artifact to Tomcat') {
             steps {
                 sh '''
-                sudo /bin/cp ${WAR_PATH} ${TOMCAT_WEBAPPS}/hello-wold.war
+                sudo /bin/cp ${WAR_PATH} ${TOMCAT_WEBAPPS}/hello-world.war
                 '''
             }
         }
